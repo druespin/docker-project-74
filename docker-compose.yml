@@ -1,0 +1,11 @@
+services:
+  app:
+    image: druespin/docker-project-74
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+    volumes:
+      - ./app:/app
+    ports:
+      - 8080:8080
+    command: make test
