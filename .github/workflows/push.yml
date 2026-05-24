@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+      - step_5_push_action
+  workflow_dispatch:  
 
 env:
   CI: true
